@@ -20,6 +20,7 @@ def create_app():
     app.register_blueprint(sensors_bp)
     app.register_blueprint(data_bp)
     app.register_blueprint(root_bp)
+    app.register_blueprint(users_bp)
 
 
     return app
