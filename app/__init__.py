@@ -16,11 +16,13 @@ def create_app():
     from app.routes.data import data_bp 
     from app.routes.root import root_bp
     from app.routes.users import users_bp
+    from app.routes.user_data import user_data_bp
 
     app.register_blueprint(sensors_bp)
     app.register_blueprint(data_bp)
     app.register_blueprint(root_bp)
     app.register_blueprint(users_bp)
+    app.register_blueprint(user_data_bp)
 
 
     return app
